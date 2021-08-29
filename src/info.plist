@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>de.stevensolleder.quickgooglekeep</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>928D2914-0238-4D85-A69C-3550AEA77AEB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FE8A1062-DCC3-49B8-9B5C-BC98799BAC4F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FE8A1062-DCC3-49B8-9B5C-BC98799BAC4F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2FBB215B-2D3A-4D6F-A45A-373479032EF9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Steven Solleder</string>
+	<key>description</key>
+	<string>A simple workflow to quickly add new note to your Google Keep.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>QuickGoogleKeep</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>QuickGoogleKeep</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>2FBB215B-2D3A-4D6F-A45A-373479032EF9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>k</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Add this to your Google Keep.</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>928D2914-0238-4D85-A69C-3550AEA77AEB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>${python3_path} QuickGoogleKeep.py ${username} ${password} "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>QuickGoogleKeep.py</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FE8A1062-DCC3-49B8-9B5C-BC98799BAC4F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Before you can start using QuickGoogleKeep:
+1. Install Python 3 or higher.
+2. Install the module "gkeepapi" and "keyring" via pip3.
+3. Set up the enviroment variables correctly.
+
+If an error has occurred:
+1. Update Python 3.
+2. Update the module "gkeepapi".
+3. Use an app password for the google account you use.
+4. Go to the page "https://accounts.google.com/b/0/DisplayUnlockCaptcha" while you are logged in with the google account you use and grant access.
+
+
+
+This workflow includes the "gkeepapi" library made by Kai Zhong and the "keyring" library made by Jason R. Coombs with the following license:
+The MIT License (MIT)
+
+Copyright 2017 Kai Zhong (gkeepapi)
+Copyright Jason R. Coombs (keyring)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
+	<key>uidata</key>
+	<dict>
+		<key>2FBB215B-2D3A-4D6F-A45A-373479032EF9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>25</integer>
+		</dict>
+		<key>928D2914-0238-4D85-A69C-3550AEA77AEB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>25</integer>
+		</dict>
+		<key>FE8A1062-DCC3-49B8-9B5C-BC98799BAC4F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>200</integer>
+			<key>ypos</key>
+			<integer>25</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>password</key>
+		<string>XXX</string>
+		<key>python3_path</key>
+		<string>/usr/local/bin/python3</string>
+		<key>username</key>
+		<string>XXX</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>username</string>
+		<string>password</string>
+	</array>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>stevensolleder.de</string>
+</dict>
+</plist>
