@@ -11,7 +11,7 @@ Just type "k" followed by the content of the note to add a new note to your Goog
 <br>
 
 ## Libraries
-Following libraries were used:
+The following libraries were used:
 - [gkeepapi](https://github.com/kiwiz/gkeepapi)
 - [keyring](https://github.com/jaraco/keyring)
 <br>
