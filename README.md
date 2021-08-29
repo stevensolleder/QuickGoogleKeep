@@ -1,5 +1,5 @@
 # QuickGoogleKeep
-![Release](https://img.shields.io/badge/Release-0.1-9cf)
+![Release](https://img.shields.io/badge/Release-0.1.0-9cf)
 
 ## Introduction
 The **QuickGoogleKeep** workflow for Alfred 4 on macOS allows you to add notes to your Google Keep fast and easy.<br>
