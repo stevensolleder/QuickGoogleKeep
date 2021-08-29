@@ -4,6 +4,7 @@
 ## Introduction
 The **QuickGoogleKeep** workflow for Alfred 4 on macOS allows you to add notes to your Google Keep fast and easy.<br>
 Just type "k" followed by the content of the note to add a new note to your Google Keep.
+QuickGoogleKeep is not supported nor endorsed by Google.
 
 <p align="center">
 <img src="https://github.com/stevensolleder/QuickGoogleKeep/blob/main/screenshots/showcase.gif" img>
