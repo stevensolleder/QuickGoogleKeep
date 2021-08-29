@@ -17,4 +17,4 @@ Following libraries were used:
 <br>
 
 ## Get in contact
-Feel free to get in contact and share your experience with **ShoppingListGenerator**. Bug reports are also very appreciated.
+Feel free to get in contact and share your experience with **QuickGoogleKeep**. Bug reports are also very appreciated.
