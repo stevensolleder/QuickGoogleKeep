@@ -17,5 +17,9 @@ The following libraries were used:
 - [keyring](https://github.com/jaraco/keyring)
 <br>
 
+## Testing
+The application was tested manually on the operating system macOS. I could not find any bugs, but there still may be some.
+<br><br>
+
 ## Get in contact
 Feel free to get in contact and share your experience with **QuickGoogleKeep**. Bug reports are also very appreciated.
