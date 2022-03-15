@@ -18,7 +18,7 @@ The following libraries were used:
 <br>
 
 ## Testing
-The application was tested manually on the operating system macOS. I could not find any bugs, but there still may be some.
+The plugin was tested manually on the operating system macOS. I could not find any bugs, but there still may be some.
 <br><br>
 
 ## Get in contact
