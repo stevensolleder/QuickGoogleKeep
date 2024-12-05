@@ -1,3 +1,6 @@
+> [!WARNING]  
+> Since either the library used to add notes to Google Keep no longer works or Google Keep no longer allows notes to be added from outside, this repository is no longer maintained.
+
 # QuickGoogleKeep
 ## Introduction
 The **QuickGoogleKeep** workflow for Alfred 4 on macOS allows you to add notes to your Google Keep fast and easy.<br>
